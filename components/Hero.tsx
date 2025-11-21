@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
          {/* Using a high quality picsum image that resembles skin/beauty tones */}
         <img 
-          src="https://picsum.photos/id/21/1920/1080" 
+          src="./images/back.PNG" 
           alt="Lash Studio Aesthetic" 
           className="w-full h-full object-cover object-center opacity-90"
         />

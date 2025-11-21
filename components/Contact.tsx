@@ -109,13 +109,13 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-2 gap-2">
                {/* Mock Insta Grid */}
                <div className="aspect-square bg-gray-100 rounded overflow-hidden">
-                 <img src="https://picsum.photos/id/106/400/400" alt="Insta post" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                 <img src="./images/8.PNG" alt="Insta post" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
                </div>
                <div className="aspect-square bg-gray-100 rounded overflow-hidden">
-                 <img src="https://picsum.photos/id/129/400/400" alt="Insta post" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                 <img src="./images/9.png" alt="Insta post" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
                </div>
                <div className="aspect-square bg-gray-100 rounded overflow-hidden">
-                 <img src="https://picsum.photos/id/177/400/400" alt="Insta post" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                 <img src="./images/10.png" alt="Insta post" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
                </div>
                <div className="aspect-square bg-gray-100 rounded overflow-hidden flex items-center justify-center bg-brand-dark/5 group cursor-pointer">
                  <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-center p-4">

@@ -56,10 +56,10 @@ export const FAQS: FaqItem[] = [
 
 // Using Picsum for placeholders with specific dimensions
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { id: 1, src: "https://picsum.photos/id/338/600/800", alt: "Natural Lash Look Close Up" },
-  { id: 2, src: "https://picsum.photos/id/64/600/800", alt: "Woman Portrait Beauty" },
-  { id: 3, src: "https://picsum.photos/id/21/600/800", alt: "Studio Details and Tools" },
-  { id: 4, src: "https://picsum.photos/id/325/600/800", alt: "Volume Lashes Side Profile" },
-  { id: 5, src: "https://picsum.photos/id/129/600/800", alt: "Cozy Studio Atmosphere" },
-  { id: 6, src: "https://picsum.photos/id/65/600/800", alt: "Lash Lift Results" },
+  { id: 1, src: "./images/1.PNG", alt: "Natural Lash Look Close Up" },
+  { id: 2, src: "./images/2.png", alt: "Woman Portrait Beauty" },
+  { id: 3, src: "./images/3.PNG", alt: "Studio Details and Tools" },
+  { id: 4, src: "./images/4.png", alt: "Volume Lashes Side Profile" },
+  { id: 5, src: "./images/6.png", alt: "Cozy Studio Atmosphere" },
+  { id: 6, src: "./images/7.png", alt: "Lash Lift Results" },
 ];

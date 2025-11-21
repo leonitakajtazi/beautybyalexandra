@@ -26,9 +26,13 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className={`font-heading font-light text-2xl tracking-wide ${scrolled ? 'text-brand-dark' : 'text-brand-dark'}`}>
-          Beauty by <span className="font-semibold">Alexandra</span>
-        </a>
+       <a href="#home" className="flex items-center space-x-2">
+  <img src="./images/logo.jpg" alt="Beauty by Alexandra" className="h-10 md:h-12" />
+  <span className="font-heading font-light text-2xl md:text-3xl text-brand-dark">
+    Beauty by <span className="font-semibold">Alexandra</span>
+  </span>
+</a>
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
