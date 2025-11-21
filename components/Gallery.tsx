@@ -12,8 +12,9 @@ const Gallery: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div className="max-w-xl">
-             <h2 className="font-heading text-3xl md:text-4xl text-brand-dark mb-4">Meine Arbeiten</h2>
-             <p className="text-brand-text/60 font-light">Ein Einblick in das Studio und Ergebnisse meiner Arbeit. Natürlich & Detailverliebt.</p>
+            <h2 className="font-heading text-3xl md:text-4xl text-black mb-4">Meine Arbeiten</h2>
+<p className="text-gray-600 font-light">Ein Einblick in das Studio und Ergebnisse meiner Arbeit. Natürlich & Detailverliebt.</p>
+
           </div>
           <div className="hidden md:block h-px bg-gray-200 flex-grow ml-10 mb-4"></div>
         </div>

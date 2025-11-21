@@ -26,13 +26,12 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-       <a href="#home" className="flex items-center space-x-2">
-  <img src="./images/logo.jpg" alt="Beauty by Alexandra" className="h-10 md:h-12" />
-  <span className="font-heading font-light text-2xl md:text-3xl text-brand-dark">
-    Beauty by <span className="font-semibold">Alexandra</span>
-  </span>
-</a>
-
+        <a href="#home" className="flex items-center space-x-2">
+          <img src="./images/logo.jpg" alt="Beauty by Alexandra" className="h-10 md:h-12" />
+          <span className="font-heading font-light text-2xl md:text-3xl text-black">
+            Lashes by <span className="font-semibold text-gray-700">AS</span>
+          </span>
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -40,7 +39,7 @@ const Navbar: React.FC = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-brand-text hover:text-brand-dark text-sm uppercase tracking-widest transition-colors"
+              className="text-gray-700 hover:text-black text-sm uppercase tracking-widest transition-colors"
             >
               {link.name}
             </a>
@@ -49,7 +48,7 @@ const Navbar: React.FC = () => {
             href={INSTAGRAM_URL} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-brand-dark hover:text-brand-light transition-colors"
+            className="text-black hover:text-gray-700 transition-colors"
           >
             <Instagram size={20} />
           </a>
@@ -57,7 +56,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-brand-dark"
+          className="md:hidden text-black"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -72,7 +71,7 @@ const Navbar: React.FC = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-brand-text text-lg font-medium text-center"
+              className="text-black text-lg font-medium text-center hover:text-gray-700"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
@@ -83,7 +82,7 @@ const Navbar: React.FC = () => {
               href={INSTAGRAM_URL} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-brand-dark text-white px-6 py-3 rounded-full flex items-center space-x-2"
+              className="bg-black text-white px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-gray-800 transition-colors"
             >
               <Instagram size={18} />
               <span>Instagram</span>
