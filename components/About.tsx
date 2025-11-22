@@ -67,7 +67,7 @@ const About: React.FC = () => {
           >
             <div className="aspect-[4/5] bg-gray-200 rounded-2xl overflow-hidden shadow-lg relative z-10">
               <img 
-                src="./images/5.PNG" 
+                src="./images/AS.jpg" 
                 alt="Portrait Beauty by Alexandra" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />

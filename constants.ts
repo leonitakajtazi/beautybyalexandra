@@ -8,31 +8,19 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'classic',
     title: 'Classic Lashes',
-    description: 'Die 1:1 Technik für einen natürlichen, aber definierten Mascara-Look. Perfekt für den Alltag.',
-    price: 'ab 65€',
-    iconName: 'Feather',
+    image: './images/foto1.jpg',
   },
   {
     id: 'hybrid',
-    title: 'Hybrid Lashes',
-    description: 'Ein Mix aus Classic und leichtem Volumen. Texturierter Look mit etwas mehr Fülle.',
-    price: 'ab 75€',
-    iconName: 'Layers',
+    title: 'Lash- oder Browlifting ( Kombipaket möglich)',
+    image: './images/foto2.jpg',
   },
   {
     id: 'volume',
-    title: 'Volume Lashes',
-    description: 'Für den glamourösen Auftritt. Handgefertigte Fächer für maximale Dichte und Fluffigkeit.',
-    price: 'ab 85€',
-    iconName: 'Sparkles',
+    title: 'Volumenlashes',
+    image: './images/foto3.jpg',
   },
-  {
-    id: 'lift',
-    title: 'Lash Lift & Tint',
-    description: 'Schwung und Farbe für deine Naturwimpern. Inklusive Keratin-Pflege für gesunden Glanz.',
-    price: 'ab 45€',
-    iconName: 'Eye',
-  },
+
 ];
 
 export const FAQS: FaqItem[] = [
@@ -50,16 +38,16 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: "Wie läuft die Bezahlung ab?",
-    answer: "Du kannst bei mir im Homestudio bequem in Bar oder per PayPal bezahlen. Bitte bringe den Betrag möglichst passend mit."
+    answer: "Die Bezahlung erfolgt in bar."
   },
 ];
 
 // Using Picsum for placeholders with specific dimensions
 export const GALLERY_IMAGES: GalleryImage[] = [
   { id: 1, src: "./images/1.PNG", alt: "Natural Lash Look Close Up" },
-  { id: 2, src: "./images/2.png", alt: "Woman Portrait Beauty" },
+  { id: 2, src: "./images/foto4.jpg", alt: "Woman Portrait Beauty" },
   { id: 3, src: "./images/3.PNG", alt: "Studio Details and Tools" },
   { id: 4, src: "./images/4.png", alt: "Volume Lashes Side Profile" },
-  { id: 5, src: "./images/6.png", alt: "Cozy Studio Atmosphere" },
-  { id: 6, src: "./images/7.png", alt: "Lash Lift Results" },
+  { id: 5, src: "./images/foto5.jpg", alt: "Cozy Studio Atmosphere" },
+  { id: 6, src: "./images/foto6.jpg", alt: "Lash Lift Results" },
 ];
