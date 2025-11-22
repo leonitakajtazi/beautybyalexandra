@@ -1,24 +1,15 @@
 // Contact.tsx
-import React, { useState } from 'react';
-import { Instagram, Send, MapPin } from 'lucide-react';
+import React from 'react';
+import { Instagram, MapPin } from 'lucide-react';
 import { INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../constants';
 
 const Contact: React.FC = () => {
-  const [formState, setFormState] = useState({ name: '', message: '' });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = `Anfrage von ${formState.name}`;
-    const body = `Name: ${formState.name}\nNachricht: ${formState.message}`;
-    window.location.href = `mailto:info@beautybyalexandra.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  };
-
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
-          {/* Left: Booking Info & Form */}
+          {/* Left: Booking Info & Button */}
           <div>
             <h2 className="font-heading text-4xl text-black mb-6">Termin vereinbaren</h2>
             <p className="text-gray-700 mb-8 leading-relaxed">
@@ -57,41 +48,17 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="p-6 bg-white rounded-2xl border border-gray-200">
-              <h4 className="font-heading mb-4 text-black">Schnelle Nachricht senden</h4>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="sr-only">Dein Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    placeholder="Dein Name" 
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring-0 outline-none bg-white transition-colors"
-                    value={formState.name}
-                    onChange={(e) => setFormState({...formState, name: e.target.value})}
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="sr-only">Nachricht</label>
-                  <textarea 
-                    id="message" 
-                    rows={3} 
-                    placeholder="Deine Frage oder Terminwunsch..." 
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-black focus:ring-0 outline-none bg-white transition-colors resize-none"
-                    value={formState.message}
-                    onChange={(e) => setFormState({...formState, message: e.target.value})}
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 font-medium tracking-wide"
-                >
-                  <span>Absenden</span>
-                  <Send size={16} />
-                </button>
-              </form>
+            {/* Booking Button */}
+            <div className="p-6 bg-white rounded-2xl border border-gray-200 flex flex-col items-center">
+              <h4 className="font-heading mb-4 text-black text-center">Zum Start der Buchung klicken</h4>
+              <a 
+                href="https://beautybyas-booking.onrender.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 font-medium tracking-wide text-center"
+              >
+                Jetzt buchen
+              </a>
             </div>
           </div>
 

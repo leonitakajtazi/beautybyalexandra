@@ -38,19 +38,20 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href={INSTAGRAM_URL} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group bg-black text-white px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
-            >
-              <span>Termin per DM</span>
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+  href="https://beautybyas-booking.onrender.com/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="group bg-black text-white px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
+>
+  <span>Jetzt Termin buchen</span>
+  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+</a>
+
             <a 
               href="#services" 
               className="px-8 py-4 rounded-full text-black border border-gray-400 hover:bg-white hover:border-transparent text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-sm"
             >
-              Preise ansehen
+              Leistungen ansehen
             </a>
           </div>
         </motion.div>
